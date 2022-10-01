@@ -1,0 +1,11 @@
+$default-font: Heebo, sans-serif;
+$default-color: #000;
+$default-font-size: 14px;
+$default-line-height: 1.5;
+$default-container-padding: 15px;
+$default-container-width: 1200px;
+$default-container-min-width: 320px;
+
+$default-container-max-width: calc(
+  $default-container-width+ $default-container-padding
+);

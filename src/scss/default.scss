@@ -1,0 +1,109 @@
+@import "scss-default/fonts";
+@import "scss-default/variables";
+
+/* Блочная модель box-sizing: border-box; */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Прижать footer к низу страницы */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+/* Сброс стилей */
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+a[class] {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Значения по умолчанию */
+body {
+  color: $default-color;
+  font-size: $default-font-size;
+  font-family: $default-font;
+  line-height: $default-line-height;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+[class$="__container"] {
+  margin: 0 auto;
+  padding: 0 $default-container-padding;
+  max-width: $default-container-max-width;
+  min-width: $default-container-min-width;
+}

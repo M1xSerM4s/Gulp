@@ -7,5 +7,5 @@ $default-container-width: 1200px;
 $default-container-min-width: 320px;
 
 $default-container-max-width: calc(
-  $default-container-width+ $default-container-padding
+  $default-container-width + $default-container-padding
 );
